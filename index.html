@@ -130,8 +130,8 @@
             The integrated testing features allow for a streamlined .</p>
         </div>
         <div class="bg-white p-10 rounded-3xl mt-20 justify-between w-[1170px] gap-5 flex flex-col lg:flex-row">
-          <div class=" ">
-            <div class="flex flex-col  lg:flex-row justify-between w-[800px]">
+          <div class=" flex flex-col justify-center ">
+            <div class=" container mx-auto flex flex-col items-center  lg:flex-row justify-center gap-10 lg:gap-0 lg:justify-between max-w-[800px]">
               <div class="flex items-center gap-5">
                 <img src="/ph-assignment-05/images/bus-logo.png" alt="bus-logo">
                 <div class="flex flex-col gap-2">
@@ -141,25 +141,25 @@
 
 
               </div>
-              <div class="flex  items-center gap-3 justify-center bg-green-200 rounded-2xl p-3  ">
+              <div class="flex  items-center gap-1 justify-center max-w-[230px] bg-green-200 rounded-2xl p-3  ">
                 <img src="/ph-assignment-05/images/seat-green.png" alt="seat">
                 <p id="total-seat-number" class="font-bold text-green-500 "> 40 </p>
                 <span class="font-bold text-green-500">Seats Left</span>
               </div>
 
             </div>
-            <div class="flex flex-col gap-5 bg-bg-ticket p-10 w-[800px] mt-10 rounded-3xl ">
-              <div class="flex justify-between items-center">
+            <div class=" container mx-auto flex flex-col gap-5 bg-bg-ticket p-10 max-w-[800px] mt-10 rounded-3xl justify-center ">
+              <div class="flex lg:justify-between justify-around  ">
                 <p class="text-gray-500 font-bold">Route</p>
                 <span class="text-black font-bold">Dhaka-Sylhet</span>
 
               </div>
-              <div class="flex justify-between items-center  border-b-2 border-t-2 border-dashed border-gray-300 pt-5 pb-5">
+              <div class="flex lg:justify-between justify-around   border-b-2 border-t-2 border-dashed border-gray-300 pt-5 pb-5">
                 <p class="text-gray-500 font-bold">Departure Time</p>
                 <span class="text-black font-bold">9:00 PM</span>
 
               </div>
-              <div class="flex justify-between items-center ">
+              <div class="flex  flex-col lg:flex-row gap-5 lg:gap-2 flex-wrap  items-center ">
                 <span class="rounded-2xl text-center bg-gray-300 text-black p-5 w-[232px]">Boarding Point - Laxmipur</span>
                 <span class="rounded-2xl text-center bg-gray-300 text-black p-5 w-[232px]">Droping Point - Bogura</span>
                 <span class="rounded-2xl text-center bg-gray-300 text-black p-5 w-[232px]">Est.Time - 11 Hours</span>
@@ -178,12 +178,12 @@
           </div>
 
         </div>
-        <div class="bg-white p-10 rounded-3xl mt-10 justify-between w-[1170px] gap-5 flex flex-col lg:flex-row">
+        <div class="bg-white p-10 rounded-3xl mt-10 mb-5 justify-between w-[1170px] gap-5 flex flex-col lg:flex-row container mx-auto">
           <!-- ticket display section -->
-          <div class=" flex flex-col gap-5 w-[585px] border-r-2 border-dashed border-gray-400 pr-10"> 
+          <div class=" flex flex-col gap-5 w-[585px] lg:border-r-2 border-r-0 border-dashed border-gray-400 pr-10"> 
             <div class="flex flex-col gap-3 ">
-              <h2 class=" text-3xl text-black pb-5">Select Your Seat</h2>
-              <div class="flex justify-between items-center   border-t-2 border-b-2 border-dashed pt-5 pb-5 border-gray-300">
+              <h2 class=" text-3xl text-black pb-5 ">Select Your Seat</h2>
+              <div class="flex lg:justify-between justify-center items-center gap-10 lg:gap-0   border-t-2 border-b-2 border-dashed pt-5 pb-5 border-gray-300">
                 <div class="flex gap-3 items-center text-gray-600  ">
                   <img src="/ph-assignment-05/images/seat-gray.png" alt="seat-gray">
                   <span>Available Seat</span>
@@ -193,13 +193,13 @@
                   <span>Selected</span>
                 </div>
               </div>
-              <div class="flex justify-end mt-5 mb-5">
+              <div class="flex lg:justify-end justify-end mr-20 lg:mr-0 mt-5 mb-5">
                 <div class=" flex items-center justify-center w-[150px] p-2 h-[56px] rounded-2xl bg-gray-300 "><img src="/ph-assignment-05/images/car-steering-wheel.png" alt="steering"></div>
                 
               </div>
               <!-- All the seats -->
 
-              <div class="flex gap-10 flex-col lg:flex-row justify-between">
+              <div class="flex lg:gap-10 gap-2  lg:flex-row lg:justify-between ">
                 <div class="flex gap-5">
                   <div class="flex flex-col gap-5 justify-around h-full items-center text-bold text-lg ">
                     <span>A</span>
@@ -327,11 +327,11 @@
               <label for="passenger-name">Passenger Name <sup> *</sup></label>
               <input class="h-[50px] border-2 border-gray-200 rounded-xl p-3" type="text" for="name" id="passenger-name" placeholder="Enter your full name" required>
               <label for="phoneInput">Phone Number <sup> *</sup></label>
-              <input class="h-[50px] border-2 border-gray-200 rounded-xl p-3" type="tel" id="phoneInput" name="phone" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              <input class="h-[50px] border-2 border-gray-200 rounded-xl p-3" type="tel" id="phoneInput" name="phone" placeholder="Enter your phone number"  required>
               <label for="passenger-email">Email: </label>
               <input class="h-[50px] border-2 border-gray-200 rounded-xl p-3" type="email" for="passenger-email" id="passenger-email" placeholder="Enter your email address">
 
-            <button class="btn bg-button-color h-[60px] text-white font-bold text-2xl mt-5" onclick="my_modal_5.showModal()" disabled>Next</button>
+            <button class="btn bg-button-color h-[60px] text-white font-bold text-2xl mt-5" id="submit-btn" onclick="my_modal_5.showModal()" disabled>Next</button>
             <div class="flex flex-col lg:flex-row justify-center pt-2 text-gray-400 font-bold text-sm gap-5">
               <a href="#" class="border-b-2 border-gray-400 ">Terms & Condition</a>
               <a href="#" class="border-b-2 border-gray-400 ">Cancelletion Policy</a>
@@ -345,7 +345,7 @@
                 <div class="modal-action">
                   <form method="dialog">
                     <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn rounded-full bg-green-600 text-white w-[200px] ">Continue</button>
+                    <button class="btn rounded-full bg-green-600 text-white w-[200px] " id="modal-btn">Continue</button>
                   </form>
                 </div>
               </div>
@@ -361,11 +361,41 @@
       
 
     </main>
-    <footer>
+    <footer class="bg-black p-10">
+      <div class="flex flex-col container mx-auto bg-black w-[1170px]">
+      <div class="flex justify-between items-center pb-10">
+      <div class="flex flex-col gap-2 text-white "> 
+        <h2 class="text-4xl font-bold ">Filxbus - Your Daily Traveler</h2>
+        <span class="text-gray-300 pt-5">P-Ticket is a digital platform to make your <br> daily commuting better.</span>
+      </div>
+      <div class="flex flex-col gap-2">
+        <span class="text-3xl text-gray-300">Download Our App</span>
+        <div class="flex items-center justify-center gap-3 text-white p-6 rounded-2xl w-[250px] h-[60px] border-2 border-white">
+          <img src="/ph-assignment-05/images/google-play.png" alt="google play">
+          <div class="flex flex-col gap-1">
+            <h6 class="text-sm">Get it on</h6>
+            <h2 class="text-lg">Google Play</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="flex justify-between border-t-2 border-dashed border-white pt-5">
+        <div class="flex gap-5 text-gray-300">
+        <span>&copy; 2024 </span>
+        <span>All rights Reserved</span>
+        <span>Flixbus.Inc </span>
+      </div>
+      <div class="flex gap-5 text-gray-300">
+        <span>Terms & Condition </span>
+        <span>Privacy Policy</span>
+        <span>Return and Refund</span>
+      </div>
 
+      </div></div>
     </footer>
+    <script src="/ph-assignment-05/script.js" defer="true"></script>
     
-   <script>
+   <!-- <script>
   function getElementById(elementId) {
     return document.getElementById(elementId);
   }
@@ -387,19 +417,24 @@
     const element = document.getElementById(elementId);
     if (element) {
       element.innerText = value;
-    } else {
-      console.error(`Element with ID ${elementId} not found.`);
-    }
+    } 
   }
 
   document.addEventListener("DOMContentLoaded", function () {
     const nameInput = document.getElementById("passenger-name");
     const phoneInput = document.getElementById("phoneInput");
-    const nextButton = document.querySelector(".btn");
+    const nextButton = document.getElementById('submit-btn');
+    const modalButton = document.getElementById('modal-btn');
+
+    modalButton.addEventListener('click',function(){
+      window.location.reload();
+    })
+
+    
 
     // Function to enable/disable button based on input fields
     function checkInputs() {
-      if (nameInput.value.trim() !== "" || phoneInput.value.trim() !== "") {
+      if (nameInput.value.trim() !== "" && phoneInput.value.trim() !== "") {
         nextButton.disabled = false;
       } else {
         nextButton.disabled = true;
@@ -512,6 +547,8 @@
     let calculateDiscounted = (totalPrice * 15 ) / 100;
     setTextElementValueById('discounted-price' , calculateDiscounted); 
 
+    couponField.value = "";
+
     // Disable input field and button
     couponField.disabled = true;
     couponButton.disabled = true;
@@ -524,10 +561,13 @@
     
     let calculateDiscounted = (totalPrice * 20 ) / 100;
     setTextElementValueById('discounted-price' , calculateDiscounted); 
-
+    couponField.value = "";
     // Disable input field and button
     couponField.disabled = true;
     couponButton.disabled = true;
+  }
+  else{
+    window.alert("Invalid coupon code! Please try again")
   }
   
   setTextElementValueById("total-price", totalPrice);
@@ -535,7 +575,7 @@
 
 
   });
-</script>
+</script> -->
 
 
     <script src="https://kit.fontawesome.com/2b7a164169.js" crossorigin="anonymous"></script>

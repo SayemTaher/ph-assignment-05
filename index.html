@@ -505,21 +505,21 @@
   
   if(couponField.value === coupon1){
     totalPrice -= (totalPrice * 15 ) / 100;
-    const discountedPriceElement = getElementById('discounted-price'); // Corrected
-    const showDiscount = getElementById('display-discount'); // Corrected
+    const discountedPriceElement = getElementById('discounted-price'); 
+    const showDiscount = getElementById('display-discount'); 
     showDiscount.classList.remove('hidden');
     
     let calculateDiscounted = (totalPrice * 15 ) / 100;
-    setTextElementValueById('discounted-price' , calculateDiscounted); // Corrected
+    setTextElementValueById('discounted-price' , calculateDiscounted); 
   }
   else if(couponField.value === coupon2){
     totalPrice -= (totalPrice * 20 ) / 100;
-    const discountedPriceElement = getElementById('discounted-price'); // Corrected
-    const showDiscount = getElementById('display-discount'); // Corrected
+    const discountedPriceElement = getElementById('discounted-price'); 
+    const showDiscount = getElementById('display-discount'); 
     showDiscount.classList.remove('hidden');
     
     let calculateDiscounted = (totalPrice * 20 ) / 100;
-    setTextElementValueById('discounted-price' , calculateDiscounted); // Corrected
+    setTextElementValueById('discounted-price' , calculateDiscounted); 
   }
   
   setTextElementValueById("total-price", totalPrice);

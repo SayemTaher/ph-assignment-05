@@ -498,7 +498,7 @@
       getElementById(seat).addEventListener("click", clickOnSeatEvent);
     });
     
-    couponButton.addEventListener("click", function(){
+  couponButton.addEventListener("click", function(){
   const coupon1 = "NEW15";
   const coupon2 = "Couple 20";
   let totalPrice = getTextElementValueById("total-price");
@@ -511,6 +511,10 @@
     
     let calculateDiscounted = (totalPrice * 15 ) / 100;
     setTextElementValueById('discounted-price' , calculateDiscounted); 
+
+    // Disable input field and button
+    couponField.disabled = true;
+    couponButton.disabled = true;
   }
   else if(couponField.value === coupon2){
     totalPrice -= (totalPrice * 20 ) / 100;
@@ -520,10 +524,15 @@
     
     let calculateDiscounted = (totalPrice * 20 ) / 100;
     setTextElementValueById('discounted-price' , calculateDiscounted); 
+
+    // Disable input field and button
+    couponField.disabled = true;
+    couponButton.disabled = true;
   }
   
   setTextElementValueById("total-price", totalPrice);
 });
+
 
   });
 </script>
